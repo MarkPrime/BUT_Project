@@ -1,0 +1,239 @@
+{
+    "id": "DIST-001",
+    "nomOrganisation": "IUT Robert Schuman",
+    "localisation": "Bâtiment A Neuvic",
+    "actif": true,
+	"modePaiement": 7,
+
+    "configuration": {
+      "nombreLignes": 4,
+      "nombreColonnes": 4,
+      "temperatureBoissons": 6,
+      "temperaturePlats": 4
+    },
+
+  "produits": [
+    {
+      "reference": "BOI001",
+      "nom": "Eau minérale",
+      "description": "Bouteille d'eau minérale 50 cl",
+      "categorie": "boisson",
+      "prix": 1.00,
+      "allergenes": []
+    },
+    {
+      "reference": "BOI002",
+      "nom": "Coca-Cola",
+      "description": "Boisson gazeuse au cola 50 cl",
+      "categorie": "boisson",
+      "prix": 1.50,
+      "allergenes": []
+    },
+    {
+      "reference": "BOI003",
+      "nom": "Jus d'orange",
+      "description": "Jus d'orange 33 cl",
+      "categorie": "boisson",
+      "prix": 1.80,
+      "allergenes": []
+    },
+    {
+      "reference": "BOI004",
+      "nom": "Café",
+      "description": "Café arabica 25 cl",
+      "categorie": "boisson",
+      "prix": 1.20,
+      "allergenes": []
+    },
+
+    {
+      "reference": "PLA001",
+      "nom": "Sandwich jambon-fromage",
+      "description": "Pain, jambon blanc et fromage",
+      "categorie": "plat",
+      "prix": 4.50,
+      "allergenes": [
+        "gluten",
+        "lait"
+      ]
+    },
+    {
+      "reference": "PLA002",
+      "nom": "Sandwich poulet-crudités",
+      "description": "Pain, poulet, salade et tomates",
+      "categorie": "plat",
+      "prix": 4.80,
+      "allergenes": [
+        "gluten"
+      ]
+    },
+    {
+      "reference": "PLA003",
+      "nom": "Salade César",
+      "description": "Salade, poulet, tomates, parmesan et sauce César",
+      "categorie": "plat",
+      "prix": 5.50,
+      "allergenes": [
+        "lait",
+        "œufs",
+        "moutarde"
+      ]
+    },
+    {
+      "reference": "PLA004",
+      "nom": "Salade végétarienne",
+      "description": "Salade composée de crudités et de céréales",
+      "categorie": "plat",
+      "prix": 5.20,
+      "allergenes": [
+        "gluten"
+      ]
+    },
+
+    {
+      "reference": "DES001",
+      "nom": "Cookie chocolat",
+      "description": "Cookie aux pépites de chocolat",
+      "categorie": "dessert",
+      "prix": 2.00,
+      "allergenes": [
+        "gluten",
+        "lait",
+        "œufs"
+      ]
+    },
+    {
+      "reference": "DES002",
+      "nom": "Compote de pommes",
+      "description": "Compote de pommes sans sucres ajoutés",
+      "categorie": "dessert",
+      "prix": 1.50,
+      "allergenes": []
+    }
+  ],
+
+  "emplacements": [
+    {
+      "code": "A1",
+      "referenceProduit": "BOI001",
+      "stock": 8,
+      "capacite": 10
+    },
+    {
+      "code": "A2",
+      "referenceProduit": "BOI002",
+      "stock": 6,
+      "capacite": 10
+    },
+    {
+      "code": "A3",
+      "referenceProduit": "BOI003",
+      "stock": 4,
+      "capacite": 8
+    },
+    {
+      "code": "A4",
+      "referenceProduit": "BOI004",
+      "stock": 10,
+      "capacite": 10
+    },
+
+    {
+      "code": "B1",
+      "referenceProduit": "PLA001",
+      "stock": 4,
+      "capacite": 5
+    },
+    {
+      "code": "B2",
+      "referenceProduit": "PLA002",
+      "stock": 2,
+      "capacite": 5
+    },
+    {
+      "code": "B3",
+      "referenceProduit": "PLA003",
+      "stock": 0,
+      "capacite": 5
+    },
+    {
+      "code": "B4",
+      "referenceProduit": "PLA004",
+      "stock": 3,
+      "capacite": 5
+    },
+
+    {
+      "code": "C1",
+      "referenceProduit": "DES001",
+      "stock": 7,
+      "capacite": 8
+    },
+    {
+      "code": "C2",
+      "referenceProduit": "DES002",
+      "stock": 5,
+      "capacite": 8
+    },
+    {
+      "code": "C3",
+      "referenceProduit": null,
+      "stock": 0,
+      "capacite": 8
+    },
+    {
+      "code": "C4",
+      "referenceProduit": null,
+      "stock": 0,
+      "capacite": 8
+    },
+
+    {
+      "code": "D1",
+      "referenceProduit": null,
+      "stock": 0,
+      "capacite": 10
+    },
+    {
+      "code": "D2",
+      "referenceProduit": null,
+      "stock": 0,
+      "capacite": 10
+    },
+    {
+      "code": "D3",
+      "referenceProduit": null,
+      "stock": 0,
+      "capacite": 10
+    },
+    {
+      "code": "D4",
+      "referenceProduit": null,
+      "stock": 0,
+      "capacite": 10
+    }
+  ],
+
+  "stockPieces": [
+	{
+	  "valeur": 0.10,
+	  "quantite": 20
+	},
+	{
+	  "valeur": 0.20,
+	  "quantite": 20
+	},
+	{
+	  "valeur": 0.50,
+	  "quantite": 15
+	},
+	{
+	  "valeur": 1.00,
+	  "quantite": 10
+	},
+	{
+	  "valeur": 2.00,
+	  "quantite": 8
+	}
+  ]
+}
