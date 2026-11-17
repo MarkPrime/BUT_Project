@@ -9,5 +9,23 @@
     "nombreColonnes": 4,
     "temperatureBoissons": 6,
     "temperaturePlats": 4
-  }
+  },
+  "produits": [
+    {
+      "reference": "BOI001",
+      "nom": "Eau minérale",
+      "description": "Boutelle d'eau minérale 50cl",
+      "categorie": "Boisson",
+      "prix": 1,
+      "allergenes": []
+    }
+  ],
+  "emplacements": [
+    {
+      "code": "A1",
+      "referenceProduit": "BOI001",
+      "stock": 8,
+      "capacite": 10
+    }
+  ]
 }

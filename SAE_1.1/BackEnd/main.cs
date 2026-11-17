@@ -6,6 +6,22 @@ using System.Text.Encodings.Web;
 
 class Distributeur
 {
+    // structure des emplacement
+    struct Emplacement
+    {
+        public string code;
+        public string referenceProduit;
+        public int stock;
+        public int capacite;
+        public Emplacement(string cd, string refer, int stk, int cap)
+        {
+            code = cd;
+            referenceProduit = refer;
+            stock = stk;
+            capacite = cap;
+        }
+    }
+
     // Structure pour les products
     struct Produit
     {
@@ -34,7 +50,8 @@ class Distributeur
         public bool actif;
         public int modePaiment;
         public Dictionary<string, int> configuration;
-        public Dictionary<int, Produit> produits;
+        public List<Produit> produits;
+        public List<Emplacement> emplacements;
         public Dist(string idi, string nom, string loc, bool ac, int mode)
         {
             id = idi;
@@ -43,7 +60,8 @@ class Distributeur
             actif = ac;
             modePaiment = mode;
             configuration = new  Dictionary<string, int>();
-            produits = new Dictionairy<int, Produit>();
+            produits = new List<Produit>();
+            emplacements = new List<Emplacement>();
         }
     }
     
@@ -57,7 +75,11 @@ class Distributeur
     }
     static void ajouterProduit(ref Dist distributeur, Produit produit)
     {
-        distributeur.produits.Add(1, produit);
+        distributeur.produits.Add(produit);
+    }
+    static void ajouterEmplacement(ref Dist distributeur, Emplacement emplacement)
+    {
+        distributeur.emplacements.Add(emplacement);
     }
 
     static void Main()
@@ -65,6 +87,7 @@ class Distributeur
         /*Declarations*/ 
         Dist dist1;
         Produit produit1;
+        Emplacement emp1;
         string objectDistributeur;
 
         // Verification si le fichier existe
@@ -84,11 +107,13 @@ class Distributeur
         // Creation des Structures
         dist1 = new Dist("DIST-001", "IUT Robert Shuman", "Bâtiment A Neuvic", true, 7);
         produit1 = new Produit("BOI001", "Eau minérale", "Boutelle d'eau minérale 50cl", "Boisson", 1);
+        emp1 = new Emplacement("A1", "BOI001", 8, 10);
 
 
         // Ajout le Dictionaire Configuration
         ajouterConfig(ref dist1);
         ajouterProduit(ref dist1, produit1);
+        ajouterEmplacement(ref dist1, emp1);
         
 
         // Affichage de Distributeur en Struct
