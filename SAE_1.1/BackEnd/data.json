@@ -16,7 +16,7 @@
       "nom": "Eau minérale",
       "description": "Boutelle d'eau minérale 50cl",
       "categorie": "Boisson",
-      "prix": 1,
+      "prix": 1.00,
       "allergenes": []
     }
   ],
@@ -30,7 +30,7 @@
   ],
   "stockPieces": [
     {
-      "valeur": 0.2,
+      "valeur": 0.20,
       "quantite": 20
     }
   ]

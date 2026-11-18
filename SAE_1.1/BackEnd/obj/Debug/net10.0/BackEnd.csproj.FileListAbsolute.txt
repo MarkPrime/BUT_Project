@@ -1,0 +1,15 @@
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.AssemblyInfoInputs.cache
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.AssemblyInfo.cs
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.csproj.CoreCompileInputs.cache
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.sourcelink.json
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/bin/Debug/net10.0/BackEnd
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/bin/Debug/net10.0/BackEnd.deps.json
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/bin/Debug/net10.0/BackEnd.runtimeconfig.json
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/bin/Debug/net10.0/BackEnd.dll
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/bin/Debug/net10.0/BackEnd.pdb
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.dll
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/refint/BackEnd.dll
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.pdb
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/BackEnd.genruntimeconfig.cache
+/home/mrk/BUT_Project/SAE_1.1/BackEnd/obj/Debug/net10.0/ref/BackEnd.dll
