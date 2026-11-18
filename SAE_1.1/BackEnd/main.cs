@@ -29,7 +29,7 @@ class Distributeur
         public string nom;
         public string description;
         public string categorie;
-        public double prix;
+        public decimal prix;
         public List<string> allergenes;
         public Produit(string refer, string nm, string dsc, string cat, double px)
         {
@@ -45,7 +45,7 @@ class Distributeur
     // Structure pour les pieces
     struct Piece
     {
-        public double valeur;
+        public decimal valeur;
         public int quantite;
         public Piece(double val, int quant)
         {
@@ -126,9 +126,9 @@ class Distributeur
         
         // Creation des Structures
         dist1 = new Dist("DIST-001", "IUT Robert Shuman", "Bâtiment A Neuvic", true, 7);
-        produit1 = new Produit("BOI001", "Eau minérale", "Boutelle d'eau minérale 50cl", "Boisson", 1);
+        produit1 = new Produit("BOI001", "Eau minérale", "Boutelle d'eau minérale 50cl", "Boisson", 1.00m);
         emp1 = new Emplacement("A1", "BOI001", 8, 10);
-        piece1 = new Piece(0.20, 20);
+        piece1 = new Piece(0.20m, 20);
 
 
         // Ajout le Dictionaire Configuration
