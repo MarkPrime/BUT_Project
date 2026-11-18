@@ -41,6 +41,19 @@ class Distributeur
             allergenes = new List<string>();
         }
     }
+
+    // Structure pour les pieces
+    struct Piece
+    {
+        public double valeur;
+        public int quantite;
+        public Piece(double val, int quant)
+        {
+            valeur = val;
+            quantite = quant;
+        }
+    }
+
     // Structure generale de Distributeur
     struct Dist
     {
@@ -52,6 +65,7 @@ class Distributeur
         public Dictionary<string, int> configuration;
         public List<Produit> produits;
         public List<Emplacement> emplacements;
+        public List<Piece> stockPieces;
         public Dist(string idi, string nom, string loc, bool ac, int mode)
         {
             id = idi;
@@ -62,6 +76,7 @@ class Distributeur
             configuration = new  Dictionary<string, int>();
             produits = new List<Produit>();
             emplacements = new List<Emplacement>();
+            stockPieces = new List<Piece>();
         }
     }
     
@@ -81,6 +96,10 @@ class Distributeur
     {
         distributeur.emplacements.Add(emplacement);
     }
+    static void ajouterPiece(ref Dist distributeur, Piece piece)
+    {
+        distributeur.stockPieces.Add(piece);
+    }
 
     static void Main()
     {
@@ -88,6 +107,7 @@ class Distributeur
         Dist dist1;
         Produit produit1;
         Emplacement emp1;
+        Piece piece1;
         string objectDistributeur;
 
         // Verification si le fichier existe
@@ -108,12 +128,14 @@ class Distributeur
         dist1 = new Dist("DIST-001", "IUT Robert Shuman", "Bâtiment A Neuvic", true, 7);
         produit1 = new Produit("BOI001", "Eau minérale", "Boutelle d'eau minérale 50cl", "Boisson", 1);
         emp1 = new Emplacement("A1", "BOI001", 8, 10);
+        piece1 = new Piece(0.20, 20);
 
 
         // Ajout le Dictionaire Configuration
         ajouterConfig(ref dist1);
         ajouterProduit(ref dist1, produit1);
         ajouterEmplacement(ref dist1, emp1);
+        ajouterPiece(ref dist1, piece1);
         
 
         // Affichage de Distributeur en Struct

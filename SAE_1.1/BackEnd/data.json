@@ -27,5 +27,11 @@
       "stock": 8,
       "capacite": 10
     }
+  ],
+  "stockPieces": [
+    {
+      "valeur": 0.2,
+      "quantite": 20
+    }
   ]
 }
