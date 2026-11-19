@@ -1,27 +1,32 @@
 using System;
 using System.Text;
+namespace BackEnd.structures;
 
-namespace BackEnd.Structures;
+/*---------------------------------
+
+Fichier dedier que a des structures
+
+----------------------------------*/
 
 //Structure generale de Distributeur
 public struct Dist
 {
-    public string id;
-    public string nomOrganisation;
-    public string localisation;
-    public bool actif;
-    public int modePaiment;
+    public string? id;
+    public string? nomOrganisation;
+    public string? localisation;
+    public bool? actif;
+    public int? modePaiment;
     public Dictionary<string, int> configuration;
     public List<Produit> produits;
     public List<Emplacement> emplacements;
     public List<Piece> stockPieces;
-    public Dist(string idi, string nom, string loc, bool ac, int mode)
+    public Dist(string i)
     {
-        id = idi;
-        nomOrganisation = nom;
-        localisation = loc;
-        actif = ac;
-        modePaiment = mode;
+        id = i;
+        nomOrganisation = null;
+        localisation = null;
+        actif = null;
+        modePaiment = null;
         configuration = new  Dictionary<string, int>();
         produits = new List<Produit>();
         emplacements = new List<Emplacement>();
